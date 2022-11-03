@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    transition: 5s linear;
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 500vh;
+}
+/* Navigation */
+.navigation{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #010103;
+    z-index: 3;
+}
+.navigation .logo{
+    margin-top: 10px;
+}
+.nav-item ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-item ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-item ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav-item ul li a:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+
+/* Home */
+.home{
+    background-image: url(./images/home-img.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: whitesmoke;
+}
+.home-data{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 100px;
+}
+.home-data h1{
+    font-size: 60px;
+    letter-spacing: 0.3rem;
+}
+.home-data p{
+    font-size: 25px;
+    margin-top: 30px;
+}
+.home-data .btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: rgb(107, 77, 21);
+}
+.home .home-data .btn h3{
+    font-size: 15px;
+    padding-top: 12px;
+    padding-left: 19px;
+}
+.home-data .btn:hover{
+    cursor: pointer;
+    width: 200px;
+    letter-spacing: 0.2rem;
+}
+
+/* About Us */
+.about-us{
+    color: whitesmoke;
+}
+.about-us h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 35px;
+}
+.about-us h1 span{
+    color: rgb(253, 96, 39);
+}
+.about-us .main-data{
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-us .about-data{
+    background-color: #13131a;
+    text-align: center;
+}
+
+.about-us .about-data h1{
+    font-size: 30px;
+}
+.about-us .about-data p{
+    font-size: 17px;
+    margin-top: 40px;
+    line-height: 1.2rem;
+    padding: 20px;
+}
+.about-us .about-data button{
+    margin-top: 50px;
+    width: 100px;
+    border: none;
+    height: 30px;
+    background-color: rgb(235, 179, 76);
+    color: whitesmoke;
+    font-weight: bold;
+}
+.about-us .about-data button:hover{
+    cursor: pointer;
+    width: 150px;
+    transform: scale(1.2);
+    box-shadow: 0px 10px 10px rgb(47, 32, 5);
+}
+
+/* Menu */
+.menu{
+    align-items: center;
+    margin-top: 50px;
+}
+.menu h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.menu h1 span{
+    color: rgb(253, 96, 39);
+}
+.menu .menu-data{
+    margin-top: 60px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.menu .menu-data .box{
+    width: 300px;
+    height: 450px;
+    margin: 0px 20px 0px 20px;
+    border: 2px solid rgba(255,255,255,.3);
+}
+.menu .menu-data .box .box-data{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.menu .menu-data .box .box-data img{
+    margin-top: 40px;
+}
+.menu .menu-data .box .box-data h2{
+    margin-top: 40px;
+}
+.menu .menu-data .box .box-data h3{
+    margin-top: 40px;
+    font-size: 25px;
+}
+.menu .menu-data .box .box-data button{
+    margin-top: 40px;
+    width: 100px;
+    border: none;
+    height: 40px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+.menu .menu-data .box .box-data button:hover{
+    box-shadow: 0px 10px 10px white;
+    transform: scale(1.2);
+    background-color: white;
+    color: black;
+}
+
+/* Products */
+.products{
+    align-items: center;
+    margin-top: 40px;
+    color: white;
+}
+.products h1{
+    text-align: center;
+    font-size: 40px;
+}
+.products h1 span{
+    color: rgb(253, 96, 39);
+}
+.products .pro-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.products .pro-box .pro-datas{
+    width: 400px;
+    height: 450px;
+    border: 2px solid rgba(255,255,255,.3);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.products .pro-box .pro-datas img{
+    margin-top: 40px;
+}
+.products .pro-box .pro-datas h2{
+    margin-top: 40px;
+    font-size: 30px;
+}
+.products .pro-box .pro-datas h3{
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+/* Review */
+.review{
+    align-items: center;
+    color: white;
+    margin-top: 70px;
+}
+.review h1{
+    text-align: center;
+    font-size: 50px;
+}
+.review h1 span{
+    color: rgb(253, 96, 39);
+}
+.review .rev-box{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.review .rev-box .rev-data{
+    width: 390px;
+    height: 450px;
+    border: 2px solid rgba(255,255,255,.3);
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.review .rev-box .rev-data img{
+    margin-top: 40px;
+}
+.review .rev-box .rev-data p{
+    margin-top: 40px;
+}
+.review .rev-box .rev-data .pic{
+    margin-top: 40px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.review .rev-box .rev-data .he{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Contact */
+.contact{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+    width: 100%;
+    background-color: #13131a;
+    min-height: 45vh;
+}
+.contact h1{
+    font-size: 40px;
+}
+.contact h1 span{
+    color: rgb(253, 96, 39);
+}
+.contact .email h2{
+    margin-top: 30px;
+}
+.contact .icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact .icon li{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.contact .icon li{
+    margin-top: 40px;
+}
+
+
+/* Responsive */
+@media screen and (max-width:712px) {
+    .home{
+        background-image: url(../images/home-img.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .navigation{
+        width: 100%;
+    }
+    .about-us img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .navigation{
+        display: block;
+        justify-content: center;
+    }
+    .navigation .logo{
+        display: none
+    }
+    .container .navigation .nav-item{
+        display: none;
+    }
+    .navigation .nav-item ul{
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .home .home-data{
+        margin-top: 150px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .home .home-data h1{
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    .home .home-data p{
+        font-size: 35px;
+        margin-top: 40px;
+    }
+    .home .home-data .btn{
+        margin: auto;
+        margin-top: 40px;
+    }
+    .home .home-data .btn h3{
+        padding-right: 12px;
+    }
+    
+}
+@media screen and (max-width:375px) {
+    .navigation{
+        width: 100%;
+    }
+    
+}
